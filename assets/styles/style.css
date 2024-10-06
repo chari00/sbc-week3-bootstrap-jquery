@@ -11,7 +11,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
     
@@ -44,7 +43,8 @@ body::before {
     z-index: -1;
 }
 main{
-    padding-top: 15%;
+    
+    padding: 5%;
 }
 
 
@@ -56,11 +56,16 @@ main{
     align-items: center;
 }
 
+/* .avatar-container{
+    margin: 10%;
+} */
+
 .avatar {
     border-radius: 9999px;
-    width: 50%;
+    width: 300px;
+    /* width: 50%; */
     height: auto;
-    margin: auto 20%;
+    /* margin: 10%; */
     /* margin-top: 20%; */
     /* margin-bottom: 30px; */
     /* box-shadow: -150px -20px 180px white ; */
@@ -80,6 +85,15 @@ p{
     color: var(--text-color-white); 
 
 }
+#dropdownMenuButton1{
+    font-weight: 600;
+    color: var(--text-color-white); 
+
+}
+.dropdown{
+    display: flex;
+    justify-content: center;
+}
 .btn:hover,
 .inline:hover,
 #refresh:hover,
@@ -92,13 +106,21 @@ p{
 color:aqua
 }
 #jokes,
-.portfolio{
+.portfolio,
+.dropdown{
     color: var(--text-color-white);
     box-shadow: 2px 4px 4px 5px rgb(245 137 11);
     /* box-shadow: -10px -10px 50px var(--text-color); */
     font-weight: 600;
+    padding:20px;
+    
 
 }
 .dropdown-item{
     color: var(--text-color-black);
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+
 }
