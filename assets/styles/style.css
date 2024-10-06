@@ -1,7 +1,8 @@
 :root{
     --h1-font-weight:800;
     --btn-hover:orange;
-    --text-color:white;
+    --text-color-white:white;
+    --text-color-black:black;
 
 }
 
@@ -25,7 +26,7 @@ html{
 body {
     overflow: hidden;
     position: relative;
-    color: var(--text-color);
+    color: var(--text-color-white);
 }
 
 body::before {
@@ -63,7 +64,7 @@ main{
     /* margin-top: 20%; */
     /* margin-bottom: 30px; */
     /* box-shadow: -150px -20px 180px white ; */
-    box-shadow: -10px -10px 50px var(--text-color);
+    box-shadow: -10px -10px 50px var(--text-color-white);
 }
 h1{
     font-size: 2rem;
@@ -76,12 +77,15 @@ p{
 
 }
 .btn{
-    color: var(--text-color);
-}
+    color: var(--text-color-white); 
+ }
 #jokes{
-    color: var(--text-color);
+    color: var(--text-color-white);
     box-shadow: 2px 4px 4px 5px rgb(245 137 11);
     /* box-shadow: -10px -10px 50px var(--text-color); */
     font-weight: 600;
 
+}
+.dropdown-item{
+    color: var(--text-color-black);
 }
