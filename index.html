@@ -31,16 +31,15 @@
         </div>
       </section>
       <section>
-        <button type="button" id="jokes" class="btn">
-          Feeling board? Try some jokes
+        <button type="button" id="jokes" class="btn">Feeling board? 
+          <span class="inline">Try some jokes</span>
         </button>
         <a
           href="https://chari-cruz-multipage-website.netlify.app/"
-          class="btn btn-link"
+          class="btn btn-link portfolio"
           target="_blank"
           >My portfolio</a
         >
-        <!-- <a href="https://feedback-form-mcc.netlify.app/" class="btn btn-link" target="_blank">Connect with me</a> -->
         <div class="dropdown">
           <button
             class="btn btn-info dropdown-toggle"
@@ -89,8 +88,16 @@
             url: "https://official-joke-api.appspot.com/random_joke",
             type: "GET",
             success: function (data) {
-              $("#jokes").html(data.setup + "<br>" + data.punchline);
+              $("#jokes").html(
+                data.setup +
+                  "<br>" +
+                  data.punchline +
+                  "<br><a href='#' id='refresh' class='btn'>Try again.</a>" + 
+                  "<a href='index.html' id='home' class='btn'>Home.</a>"
+              );
+              
             },
+
             error: function (error) {
               console.log(error);
             },
