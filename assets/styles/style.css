@@ -78,8 +78,21 @@ p{
 }
 .btn{
     color: var(--text-color-white); 
- }
-#jokes{
+
+}
+.btn:hover,
+.inline:hover,
+#refresh:hover,
+#home:hover{
+    color: var(--btn-hover);
+}
+
+#refresh,
+#home{
+color:aqua
+}
+#jokes,
+.portfolio{
     color: var(--text-color-white);
     box-shadow: 2px 4px 4px 5px rgb(245 137 11);
     /* box-shadow: -10px -10px 50px var(--text-color); */
