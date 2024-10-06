@@ -23,25 +23,29 @@ html{
 }
 
 body {
-    overflow: hidden;
+    /* overflow: hidden; */
     position: relative;
     color: var(--text-color-white);
-}
-
-body::before {
-    content: "";
     background-image: url('/bg.png');
     background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+}
+
+/* body::before { */
+    /* content: ""; */
+    /* background-image: url('/bg.png'); */
+    /* background-size: cover; */
     /* background-position: center; */
     /* background-repeat: no-repeat; */
     /* opacity: 0.5; */
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
+    /* z-index: -1; */
+/* } */
 main{
     
     padding: 5%;
@@ -103,16 +107,20 @@ p{
 
 #refresh,
 #home{
-color:aqua
+color:rgb(34, 151, 210);
+font-weight: 600;
+
 }
 #jokes,
 .portfolio,
 .dropdown{
     color: var(--text-color-white);
-    box-shadow: 2px 4px 4px 5px rgb(245 137 11);
+    box-shadow: -3px -2px 0px 4px rgb(151, 89, 8);
     /* box-shadow: -10px -10px 50px var(--text-color); */
     font-weight: 600;
-    padding:20px;
+    padding:10px;
+    margin: 10px auto;
+    border-radius: 10px;
     
 
 }
