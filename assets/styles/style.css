@@ -75,7 +75,8 @@ p,
 .btn:hover,
 .inline:hover,
 #another:hover,
-#close:hover {
+#close:hover,
+#dropdownMenuButton1:hover {
   color: var(--btn-hover);
 }
 
@@ -159,4 +160,23 @@ p,
     max-width: 1200px;
     margin: 5% auto;
   }
+}
+@keyframes growButton {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+#jokes,
+.portfolio {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#jokes:hover,
+.portfolio:hover,
+.dropdown:hover {
+  animation: growButton 0.3s ease forwards;
 }
