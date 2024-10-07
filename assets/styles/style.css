@@ -23,7 +23,7 @@ body {
   /* overflow: hidden; */
   position: relative;
   color: var(--text-color-white);
-  background-image: url("/bg.png");
+  background-image: url("/assets/images/bg.png");
   background-size: cover;
   background-position: center;
   /* background-repeat: no-repeat; */
@@ -112,6 +112,10 @@ p,
     }
 }
 @media (min-width: 1024px) {
+  main{
+    padding-top:10%;
+    margin: auto;
+}
   .intro {
     display: flex;
     flex-direction: row;
@@ -154,7 +158,6 @@ p,
 @media (min-width:1400px){
     main{
         max-width: 1200px;
-        padding: 100px;
         margin: 5% auto;
     }
     }
