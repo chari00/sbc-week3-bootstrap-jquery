@@ -107,13 +107,13 @@ p,
 
 @media (min-width: 768px) {
   main {
-    padding-top: 15%;
+    padding-top: 10%;
     margin: auto;
   }
 }
 @media (min-width: 1024px) {
   main {
-    padding-top: 10%;
+    padding-top: 5%;
     margin: auto;
   }
   .intro {
