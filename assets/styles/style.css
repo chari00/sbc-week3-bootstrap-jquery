@@ -27,7 +27,6 @@ body {
   background-size: cover;
   background-position: center;
   /* background-repeat: no-repeat; */
-  opacity: 0.;
 }
 main {
   padding: 8%;
@@ -75,8 +74,8 @@ p,
 }
 .btn:hover,
 .inline:hover,
-#refresh:hover,
-#home:hover {
+#another:hover,
+#close:hover {
   color: var(--btn-hover);
 }
 
@@ -105,17 +104,17 @@ p,
   flex-direction: column;
 }
 
-@media (min-width: 768px){
-    main{
-        padding-top:15%;
-        margin: auto;
-    }
+@media (min-width: 768px) {
+  main {
+    padding-top: 15%;
+    margin: auto;
+  }
 }
 @media (min-width: 1024px) {
-  main{
-    padding-top:10%;
+  main {
+    padding-top: 10%;
     margin: auto;
-}
+  }
   .intro {
     display: flex;
     flex-direction: row;
@@ -155,10 +154,9 @@ p,
     color: var(--text-color-white);
   }
 }
-@media (min-width:1400px){
-    main{
-        max-width: 1200px;
-        margin: 5% auto;
-    }
-    }
-
+@media (min-width: 1400px) {
+  main {
+    max-width: 1200px;
+    margin: 5% auto;
+  }
+}
