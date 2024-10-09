@@ -47,6 +47,7 @@
 
 - [jQuery UI Documentation](https://jqueryui.com/)
 - [Bootstrap Documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- [W3school guide for ajax call](https://www.w3schools.com/jquery/jquery_ajax_intro.asp)
 
 ---
 
